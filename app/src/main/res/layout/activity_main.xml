@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ba.businessapp.MainActivity">
+
+        
+        <TextView
+            android:id="@+id/abhiruchi_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEBE9"
+            android:text="Abhi Bus"
+            android:textAlignment="center"
+            android:textColor="#3E2723"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/cat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/abhiruchi_title"
+            android:adjustViewBounds="true"
+            android:background="@drawable/cat"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/cat"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/Brown"
+            app:srcCompat="@android:drawable/ic_menu_mylocation"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cat"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/location_icon"
+            android:text="No 12, 2nd Stage, 30th Main, BTM 2nd Stage, Bangalore"
+          />
+
+        <ImageView
+            android:id="@+id/contact_number"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/location_icon"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/Brown"
+            app:srcCompat="@android:drawable/stat_sys_phone_call"/>
+
+        <TextView
+            android:id="@+id/phone_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/contact_number"
+            android:text="+91 9505009650, 9742773848"
+
+             />
+
+        <ImageView
+            android:id="@+id/hours_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/contact_number"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/Brown"
+            app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+           />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hours_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/hours_icon"
+            android:text="9AM to 6PM"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours_icon"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          />
+
+</RelativeLayout>
